@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Css/login.css">
+</head>
+<body>
+    <header>
+        <div class="TopofPage-Left">
+            <a href="Index.html"><img src="Pic\cat-logo.png" alt="Logo" class="Logo"></a>
+        </div>
+
+        <div class="TopofPage-Right">
+            <nav>
+                <a href="Index.html">Home</a>
+                <a href="Pet.html">Pet</a>
+                <a href="News.html">News</a>
+                <a href="#down">Contact</a>
+                <a href="Login.html"><button class="LoAndReg">Login</button></a>
+                <a href="Register.html"><button class="LoAndReg">Register</button></a>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" method="post">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="retypePassword" required>
+                        <label for="retypePassword">Retype Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for="remember"><input type="checkbox" id="remember">Remember Me </label>
+                        <label><a href="#">Forget Password</a></label> 
+                    </div>
+                    <button type="submit">Register</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="Login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="down">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact us: info@meomeocat.com</p>
+                    <p>Follow us: CATMEW X CATFE</p>
+                    <p>Our number: 0985221703</p>
+                    <p class="contact-info-last">&copy; 2023 MeoMeo-Cat. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

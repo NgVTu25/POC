@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:  #FFFAFA;
+}
+
+.Logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    float: left;
+}
+
+header{
+    background: #FFE4E1;
+    height: 80px;
+    font-family: 'Verdana', Lucida Bright;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.LoAndReg {
+    padding: 10px;
+    border-style: inset;
+    border-radius: 7%;
+    background-color: rgba(225, 183, 183, 0.975);
+}
+
+.LoAndReg:hover {
+    background-color: #87CEEB; /* Change the color on hover */
+}
+
+.LoAndReg:active {
+    color: white;
+}
+    
+
+.TopofPage-Right{
+    color: #ffffff;
+    padding: 5px 25px;
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.TopofPage-Right nav {
+    margin-top: 15px; 
+    margin-bottom: 10px;
+}
+
+.TopofPage-Right nav a {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.TopofPage-Right nav ul li{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;  
+    top: 0;
+}
+
+
+
+.TopofPage-Right a:hover{
+    color: #87CEEB;
+}
+.TopofPage-Right a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.Para {
+    margin: 100px 0px 10px 0px;
+    text-align: center;
+}
+
+.Para h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.CatTypes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột */
+    gap: 20px;
+}
+
+.CatType {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 20px 30px 20px 30px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.CatType img {
+    width: 100%; 
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.Price {
+    font-weight: bold;
+    color: #3498db;
+}
+
+footer {
+    position: relative;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+
+
+.contact-info {
+    margin: 0 auto 0 auto;
+    padding: 0 0 10px 0;
+    background-color: #333;
+}
+/* Styling for Contact Information */
+.contact-info p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+}
+
+.contact-info-last{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Default styles */
+.TopofPage-Right a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Para {
+    margin: 100px 0px 10px 0px;
+    text-align: center;
+}
+
+.Para h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.CatTypes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột */
+    gap: 20px;
+}
+
+.CatType {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 20px 30px 20px 30px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.CatType img {
+    width: 100%; 
+    max-height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.Price {
+    font-weight: bold;
+    color: #3498db;
+}
+
+footer {
+    position: relative;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+
+.contact-info {
+    margin: 0 auto 0 auto;
+    padding: 0 0 10px 0;
+    background-color: #333;
+}
+
+/* Styling for Contact Information */
+.contact-info p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+}
+
+.contact-info-last{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    *{
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .TopofPage-Right nav a {
+        margin-left: 2px;
+    }
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 70px;
+    }
+    
+    .Logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .TopofPage-Right {
+        padding: 0px;
+        font-size: 5px;
+    }
+
+    .TopofPage-Right nav {
+        margin-top: 20px; 
+        margin-bottom: 10px;
+    }
+
+    .TopofPage-Right nav a {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .LoAndReg {
+        padding: 0px;
+    }
+
+    .CatTypes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjust the margin of the cat types */
+    .CatType {
+        margin: 20px 10px 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    header {
+        height: 50px;
+        padding: 5px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: -27px;
+    }
+
+    .Logo {
+        width: 40px;
+        height: 40px;
+    }
+   
+    .TopofPage-Right nav {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+
+    .TopofPage-Right nav a {
+        font-size: 14px;
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: -27px;
+    }
+
+    .Logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Adjust font sizes */
+    .TopofPage-Right nav a {
+        font-size: 12px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    a {
+        margin: 0;
+    }
+
+    .button {
+        font-size: 0.5rem;
+    }
+    /* Adjust the grid layout of the cat types */
+    .CatTypes {
+        grid-template-columns: 1fr;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .Price {
+        margin-top: 30px;
+    }    
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .Logo {
+        width: 60px;
+        height: 60px;   
+    }
+
+    .TopofPage-Right nav {
+        margin-right: 2px;
+    }
+
+    .TopofPage-Right nav a{
+        margin-left: 6px;
+        margin-right: 2px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .TopofPage-Right nav a {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    *{
+        font-size: 12px;
+    }
+    
+    header {
+        height: 50px;
+        padding: 5px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: -27px;
+    }
+
+    .Logo {
+        width: 40px;
+        height: 40px;
+    }
+   
+    .TopofPage-Right nav {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+
+    .TopofPage-Right nav a {
+        font-size: 14px;
+        padding: 2px;
+        margin: 2px;
+    }       
+    
+    .LoAndReg nav {
+        margin: 0;
+    }
+    
+    .LoAndReg button {
+        padding: 0px;
+    }
+}
+    
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 390px){
+    *{
+        font-size: 11px;
+    }
+    Header {
+        height: 120px;
+    }
+    
+    .Logo {
+        margin-top: 15px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .TopofPage-Right .LoAndReg  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 50px 5px 50px;
+        margin-top: 7px;
+        font-size: 12.5px;
+    }
+
+    .Para {
+        margin-top: 140px;
+    }
+}
+
+
