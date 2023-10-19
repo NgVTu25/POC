@@ -186,6 +186,41 @@ footer {
     .LoAndReg {
         padding: 0px;
     }
+
+    .content p {
+        font-size: 1rem;
+        margin: 20px 50px 20px 50px;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+        margin: 60px auto 20px 50px;
+    }
+
+    #picnew {
+        width: 80%;
+        height: 50vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .Logo {
+        width: 60px;
+        height: 60px;   
+    }
+    
+    .TopofPage-Right nav {
+        margin-right: 2px;
+    }
+
+    .TopofPage-Right nav a{
+        margin-left: 6px;
+        margin-right: 2px;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
@@ -243,30 +278,11 @@ footer {
 
 }
 
-
-@media only screen and (max-width: 600px) {
-    
-    .Logo {
-        width: 60px;
-        height: 60px;   
-    }
-
-    .TopofPage-Right nav {
-        margin-right: 2px;
-    }
-
-    .TopofPage-Right nav a{
-        margin-left: 6px;
-        margin-right: 2px;
-    }
-
-}
-
 @media screen and (max-width: 500px) {
     .TopofPage-Right nav a {
         font-size: 1rem;
     }
-
+    
 }
 
 @media only screen and (max-width: 480px) {

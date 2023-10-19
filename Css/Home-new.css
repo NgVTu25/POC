@@ -291,6 +291,10 @@ footer {
         font-size: 12.5px;
     }
 
+    button#login {
+        padding: 0px 60px 0px 60px !important;
+    }
+
     .News {
         margin-top: 150px;
     }

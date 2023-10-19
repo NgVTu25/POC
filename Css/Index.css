@@ -7,13 +7,13 @@
 }
 
 body{
-    background:  #FFFAFA;
+    background-color:  #FFFAFA;
 }
 
 .Logo {
     width: 100px;
     height: 100px;
-    margin-top: 0px;
+    margin-top: 0;
     float: left;
 }
 
@@ -23,9 +23,17 @@ header{
     z-index: 1;
     background: #FFE4E1;
     height: 80px;
-    font-family: 'Verdana', Lucida Bright;
+    font-family: 'Verdana', Lucida Bright, serif;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     position: fixed;
+}
+
+.TopofPage-Left {
+    flex: 1;
 }
 
 .LoAndReg {
@@ -51,7 +59,9 @@ header{
     font-weight: bold;
     text-decoration: none;
     transition: 0.5s;
+    
 }
+
 
 .TopofPage-Right nav {
     margin-top: 15px; 
@@ -101,7 +111,7 @@ header{
 .Text p {
     color: #ffffff;
     font-size: 8rem;
-    font-family: Brush Script MT;
+    font-family: Brush Script MT, serif;
 }
 
 
@@ -153,8 +163,8 @@ header{
 }
 
 .News {
-    max-width: 1400px;
-    max-height: 1000px;
+    width: 100%;
+    height: 155vh;
     font-family: 'Afrile Script', Lucida Bright;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.42);
@@ -183,7 +193,8 @@ header{
 
 .img-news {
     width: 100%;
-    height: 100%;
+    height: 70%;
+    margin-top: 20px;
     object-fit: cover;
 }
 
@@ -289,6 +300,7 @@ footer {
     .Social-platform {
       height: 135vh;
     }
+
   
     .vid-about {
       margin-left: 30px;
@@ -335,8 +347,8 @@ footer {
     
 
     .News {
-        max-width: 1000px;
-        max-height: 400vh;
+        width: 100%;
+        height: 100%;
     }
 
     .News-layout {
@@ -354,17 +366,22 @@ footer {
         padding: 0;
     }
 
+    .content {
+        height: 75vh;
+    }
+
     .vid-about {
         width: 40%;
         height: 40vh;
         padding: 0px; 
         margin-right: 20px; 
     }
+
     
     #About p {
         width: 50%;
         text-align: left;
-        height: 100%;
+        height: 80%;
         padding: 0px;
         margin: 10px;
     }   
@@ -448,13 +465,12 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    /* Adjust header height and logo size */
     *{
         font-size: 12px;
     }
     
     header {
-        height: 50px;
+        height: 80px;
         padding: 5px;
     }
     
@@ -464,7 +480,7 @@ footer {
     }
 
     .TopofPage-Right nav a {
-        font-size: 14px;
+        font-size: 1.3rem;
         padding: 2px;
         margin: 2px;
     }
@@ -492,8 +508,16 @@ footer {
         font-size: 0.5rem;
     }
     
+    .tittle {
+        font-size: 2rem;
+    }
+
     #About p {
         font-size: 1.5rem;
+    }
+    
+    .content {
+        height: 125vh;
     }
 
     .News-layout {
@@ -519,14 +543,43 @@ footer {
     
 }
     
-/*Iphone(480 x 640)*/
-@media screen and (max-width: 391px){
+@media screen and (max-width: 390px){
     *{
-        font-size: 9.5px;
+        font-size: 11px;
+    }
+    Header {
+        height: 120px;
+        margin-top: -20px;
+    }
+    
+
+    .Logo {
+        margin-top: 15px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .TopofPage-Right {
+        margin-top: 15px;
+    }
+    
+    .TopofPage-Right .LoAndReg  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 50px 5px 50px;
+        margin-top: 8px;
+        font-size: 12.5px;
+        float: right;
+    }
+    
+
+    .content {
+        height: 115vh;
     }
 
     .Social-platform {
-        height: 75vh;
+        height: 85vh;
     }
 
     #About {
@@ -535,19 +588,35 @@ footer {
     Header {
         height: 120px;
     }
-    
+
+    .TopofPage-Right nav a {
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 280px)  {
+
+    header {
+        margin-top: -10px;
+        height: 110px;
+        padding-bottom: 15px;
+    }
+
     .Logo {
-        margin-top: 15px;
-        width: 80px;
-        height: 80px;
+        margin-top: 25px;
+        margin-right: 10px;
+        width: 43px;
+        height: 43px;
+    }
+
+    .TopofPage-Right nav a {
+        margin-right: 0px;
     }
     
     .TopofPage-Right .LoAndReg  {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 5px 50px 5px 50px;
-        margin-top: 7px;
-        font-size: 12.5px;
+        float: right;
     }
 }
+
+
+

@@ -18,12 +18,19 @@ body{
 }
 
 header{
+    z-index: 1;
     background: #FFE4E1;
     height: 80px;
-    font-family: 'Verdana', Lucida Bright;
+    font-family: 'Verdana', Lucida Bright, serif;
     width: 100%;
-    top: 0;
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.TopofPage-Left {
+    flex: 1;
 }
 
 .LoAndReg {
@@ -40,7 +47,7 @@ header{
 .LoAndReg:active {
     color: white;
 }
-    
+
 
 .TopofPage-Right{
     color: #ffffff;
@@ -49,10 +56,12 @@ header{
     font-weight: bold;
     text-decoration: none;
     transition: 0.5s;
+
 }
 
+
 .TopofPage-Right nav {
-    margin-top: 15px; 
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -65,7 +74,7 @@ header{
 .TopofPage-Right nav ul li{
     display: flex;
     justify-content: space-between;
-    position: sticky;  
+    position: sticky;
     top: 0;
 }
 
@@ -395,34 +404,79 @@ footer {
         padding: 0px;
     }
 }
-    
-/*Iphone(480 x 640)*/
+
 @media screen and (max-width: 390px){
     *{
         font-size: 11px;
     }
     Header {
         height: 120px;
+        margin-top: -20px;
     }
-    
+
+
     .Logo {
         margin-top: 15px;
         width: 80px;
         height: 80px;
     }
-    
+
+    .TopofPage-Right {
+        margin-top: 15px;
+    }
+
     .TopofPage-Right .LoAndReg  {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 5px 50px 5px 50px;
-        margin-top: 7px;
+        margin-top: 8px;
         font-size: 12.5px;
+        float: right;
     }
 
-    .Para {
-        margin-top: 140px;
+
+    .content {
+        height: 115vh;
+    }
+
+    .Social-platform {
+        height: 85vh;
+    }
+
+    #About {
+        height: 90vh;
+    }
+    Header {
+        height: 120px;
+    }
+
+    .TopofPage-Right nav a {
+        margin-right: 12px;
     }
 }
 
+@media (max-width: 280px)  {
+
+    header {
+        margin-top: -10px;
+        height: 110px;
+        padding-bottom: 15px;
+    }
+
+    .Logo {
+        margin-top: 25px;
+        margin-right: 10px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .TopofPage-Right nav a {
+        margin-right: 0px;
+    }
+
+    .TopofPage-Right .LoAndReg  {
+        float: right;
+    }
+}
 
