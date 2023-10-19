@@ -543,7 +543,7 @@ footer {
     
 }
     
-@media screen and (max-width: 390px){
+@media screen and (max-width: 394px){
     *{
         font-size: 11px;
     }
