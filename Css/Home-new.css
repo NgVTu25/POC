@@ -14,16 +14,28 @@ body{
 .Logo {
     width: 100px;
     height: 100px;
+    margin-top: 0;
     float: left;
 }
 
+
+
 header{
+    z-index: 1;
     background: #FFE4E1;
-    height: 80px;
-    font-family: 'Verdana', Lucida Bright;
-    width: 100%;
     top: 0;
+    height: 80px;
+    font-family: 'Verdana', Lucida Bright, serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     position: fixed;
+}
+
+.TopofPage-Left {
+    flex: 1;
 }
 
 .LoAndReg {
@@ -49,7 +61,9 @@ header{
     font-weight: bold;
     text-decoration: none;
     transition: 0.5s;
+    
 }
+
 
 .TopofPage-Right nav {
     margin-top: 15px; 
@@ -58,8 +72,8 @@ header{
 
 .TopofPage-Right nav a {
     font-size: 1.5rem;
-    margin-right: 15px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .TopofPage-Right nav ul li{
@@ -72,12 +86,10 @@ header{
 .TopofPage-Right a:hover{
     color: #87CEEB;
 }
-
 .TopofPage-Right a{
     color: #000000;
     text-decoration: none;
 }
-
 
 .tittle {
     text-align: center;
@@ -134,16 +146,10 @@ header{
     color: #87CEEB;
 }
 
-.img-new {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
 .img-news {
     width: 100%;
-    height: 100%;
+    height: 70%;
+    margin-top: 20px;
     object-fit: cover;
 }
 
@@ -187,23 +193,27 @@ footer {
     }
     /* Adjust header height and logo size */
     header {
-        height: 40px;
+        height: 70px;
     }
     
     .Logo {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
     
     .TopofPage-Right {
         padding: 0px;
-        font-size: 1rem;
+        font-size: 5px;
     }
 
-    /* Adjust font sizes */
+    .TopofPage-Right nav {
+        margin-top: 20px; 
+        margin-bottom: 10px;
+    }
+
     .TopofPage-Right nav a {
-        font-size: 1rem;
-        margin-right: 5px;
+        font-size: 1.2rem;
+        margin-right: 10px;
     }
     
     .LoAndReg {
@@ -278,8 +288,8 @@ footer {
     
     .Logo {
         margin-top: 15px;
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
     }
     
     .TopofPage-Right .LoAndReg  {
@@ -287,14 +297,12 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 5px 50px 5px 50px;
-        margin-top: 7px;
+        margin-top: 8px;
         font-size: 12.5px;
+        float: right;
     }
 
-    button#login {
-        padding: 0px 60px 0px 60px !important;
-    }
-
+ 
     .News {
         margin-top: 150px;
     }
